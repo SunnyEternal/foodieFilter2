@@ -1,0 +1,153 @@
+{
+  "code": 200,
+  "message": "string",
+  "result": {
+    "cdnPrefix": "http://foodie-sns-beta.oss-cn-beijing.aliyuncs.com/",
+    "headImageUrl": "string",
+    "nickname": "string",
+    // "pictureViews": [
+    //   {
+    //     "albumId": 0,
+    //     "filterAction": "string",
+    //     "filterImage": "string",
+    //     "filterName": "string",
+    //     "headImg": "string",
+    //     "id": 0,
+    //     "likedNum": 0,
+    //     "nickname": "string",
+    //     "picDescription": "好好吃早餐，热爱生活",
+    //     "picHeight": 0,
+    //     "picQuality": 0,
+    //     "picUrl": "fd/user/picture/201963780443600202.jpg?x-oss-process=image/resize,w_400",
+    //     "picWidth": 0,
+    //     "position": "远洋光华国际",
+    //     "topicId": 0,
+    //     "topicName": "早餐打卡",
+    //     "um5": "string",
+    //     "uploadDate": "2019.9.12"
+    //   },
+    //   {
+    //     "albumId": 0,
+    //     "filterAction": "foodiecnb://go?filterId=143",
+    //     "filterImage": "fd/filter/pic/201963422812634101.jpg",
+    //     "filterName": "YU5",
+    //     "headImg": "fd/user/head_image/201963776685598176.jpg",
+    //     "id": 2,
+    //     "likedNum": 0,
+    //     "nickname": "😘😘😘😘",
+    //     "picDescription": "好好吃早餐，热爱生活",
+    //     "picHeight": 0,
+    //     "picQuality": 0,
+    //     "picUrl": "fd/user/picture/201963777703802191.jpg",
+    //     "picWidth": 0,
+    //     "position": "远洋光华国际",
+    //     "topicId": 0,
+    //     "topicName": "早餐打卡",
+    //     "um5": "string",
+    //     "uploadDate": "2019.9.12"
+    //   }
+    // ],
+    "pictureViews": [
+      {
+        "hasMore": 0,
+        "pictureViews": [
+          {
+            "albumId": 0,
+            "filterAction": "string",
+            "filterImage": "string",
+            "filterName": "string",
+            "headImg": "string",
+            "id": 0,
+            "likedNum": 0,
+            "nickname": "string",
+            "picDescription": "string",
+            "picHeight": 0,
+            "picQuality": 0,
+            "picUrl": "fd/user/picture/201963780443600202.jpg?x-oss-process=image/resize,w_400",
+            "picWidth": 0,
+            "position": "远洋光华国际",
+            "topicId": 0,
+            "topicName": "string",
+            "um5": "string",
+            "uploadDate": "string"
+          },
+          {
+            "albumId": 0,
+            "filterAction": "string",
+            "filterImage": "string",
+            "filterName": "string",
+            "headImg": "string",
+            "id": 0,
+            "likedNum": 0,
+            "nickname": "string",
+            "picDescription": "string",
+            "picHeight": 0,
+            "picQuality": 0,
+            "picUrl": "fd/user/picture/201963777703802191.jpg?x-oss-process=image/resize,w_400",
+            "picWidth": 0,
+            "position": "远洋",
+            "topicId": 0,
+            "topicName": "string",
+            "um5": "string",
+            "uploadDate": "string"
+          }
+        ],
+        "topicView": {
+          "hot": 0,
+          "topicId": 0,
+          "topicName": "早餐打卡"
+        }
+      },
+      {
+        "hasMore": 0,
+        "pictureViews": [
+          {
+            "albumId": 0,
+            "filterAction": "string",
+            "filterImage": "string",
+            "filterName": "string",
+            "headImg": "string",
+            "id": 0,
+            "likedNum": 0,
+            "nickname": "string",
+            "picDescription": "string",
+            "picHeight": 0,
+            "picQuality": 0,
+            "picUrl": "fd/user/picture/201963780443600202.jpg?x-oss-process=image/resize,w_400",
+            "picWidth": 0,
+            "position": "远洋光华国际",
+            "topicId": 0,
+            "topicName": "string",
+            "um5": "string",
+            "uploadDate": "string"
+          },
+          {
+            "albumId": 0,
+            "filterAction": "string",
+            "filterImage": "string",
+            "filterName": "string",
+            "headImg": "string",
+            "id": 0,
+            "likedNum": 0,
+            "nickname": "string",
+            "picDescription": "string",
+            "picHeight": 0,
+            "picQuality": 0,
+            "picUrl": "fd/user/picture/201963777703802191.jpg?x-oss-process=image/resize,w_400",
+            "picWidth": 0,
+            "position": "远洋",
+            "topicId": 0,
+            "topicName": "string",
+            "um5": "string",
+            "uploadDate": "string"
+          }
+        ],
+        "topicView": {
+          "hot": 0,
+          "topicId": 0,
+          "topicName": "早餐打卡2"
+        }
+      }
+    ]
+  }
+}

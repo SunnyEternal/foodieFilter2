@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Foodie夏日美食</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta charset="utf-8">
+
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"></script>
+
+
+
+  <style>
+  input{
+      text-indent: 0;
+      background: transparent;
+      /* border: 0 none; */
+      border: 1px solid #ccc;
+      width: 100px;
+      height: 45px;
+      font-size: 28px;
+      resize:none; 
+      outline:none;  /*清除选中效果的默认蓝色边框 */
+      -webkit-appearance:none;  /*清除浏览器默认的样式 */
+      line-height: normal;    
+  }
+  input::-webkit-input-placeholder { /* WebKit browsers */
+      line-height: 0.44rem;   
+  }
+  input:focus {
+      color: #8b8791;
+  }
+  #box{
+    width: 2.8rem;
+    height: .4rem;
+    border: 1px solid #ccc;
+  }
+  li{
+    margin-bottom: 20px;
+  }
+  
+  </style>
+</head>
+<body>
+  <div id="app">
+      <button type="button" @click="click">
+          <span v-if="fileName">重新上传</span>
+          <span v-else>上传文件</span>
+      </button>
+    <span>{{fileName}}</span>
+    <img :src="imgSrc" ref="oImg" alt="">
+    <input type="file" ref="uploadFile" @change="upload"/>
+  </div>
+  <script>
+    var vConsole = new VConsole();  
+      var app = new Vue({
+          el: '#app',
+          data: {
+              fileName: '',
+              imgSrc: ''
+          },
+          methods: {
+              click () {
+                  // 偷梁换柱,触发文件上传
+                  this.$refs.uploadFile.click();
+              },
+              upload (event) {
+                let files = event.target.files || event.dataTransfer.files;
+                var file = files[0];
+                if(window.FileReader) {
+                  var fr = new FileReader();
+                  fr.onloadend = function(e) {
+                    this.imgSrc = e.target.result;
+                  }.bind(this)
+                  fr.readAsDataURL(file);
+                }
+
+
+                
+                  // console.log( event)
+                  // let files = event.target.files || event.dataTransfer.files;
+                  // if (!files.length) {
+                  //     this.fileName = '';
+                  //     return;
+                  // }
+                  // this.fileName = files[0].name;
+
+                  // // 上传之后调用接口...
+                  // let params = new FormData();
+                  // // params.append('file', files[0]);
+                  // // console.log(params);
+                  // this.imgSrc = window.URL.createObjectURL(files[0])
+                  // this.$refs.uploadFile.value = null; // 移除文件，可以保证上传同样的文件时，也会触发change事件
+              }
+          }
+      })
+  </script>
+  <ul>
+    <!-- <li class="sty2">
+      <a href="http://10.35.33.170:8090/">Zepeto</a>
+    </li> -->
+    <li>
+      <a href="http://h5-act-beta.kajicam.com/foodie/2019/production/index.html#/list">流量</a>
+    </li>
+    <li>
+      <a href="http://10.35.33.170:8085/#/home">Foodie Cli3</a>
+    </li>
+    <li class="sty2">
+      <a href="http://10.35.33.170:8070/#/list">列表页</a>
+    </li>
+    <li class="sty3">
+      <a href="http://10.35.33.170:8070/#/login">登录</a>
+    </li>
+    <li>
+      <a href="http://10.35.33.170:8070/#/register">上传作品</a>
+    </li>
+    <li>
+      <a href="http://10.35.33.170:8070/#/work">我的作品</a>
+    </li>
+    <li>
+        <a href="http://10.35.33.170:8070/#/user">用户信息</a>
+      </li>
+      <li>
+        <a href="http://10.35.33.170:8070/#/gallery">相册</a>
+      </li>
+
+  </ul>
+</body>
+</html>

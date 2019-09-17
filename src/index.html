@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Foodie作品展</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://foodie.snow.me/img/foodie_favicon_v2.ico" type="image/x-icon" />
+
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=eed9f6e44f65c92262df3db10bd3dc02&plugin=AMap.Autocomplete"></script><!-- 高德地图 -->
+    
+    <!-- <script src="https://cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"></script> -->
+  </head>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?9bbf8aeea16d4a94563d86e922dd0438";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  // var vConsole = new VConsole();  
+  </script>
+<body>
+
+<script type="text/javascript">
+!function(e,t){var n=e.documentElement,i="orientationchange"in window?"orientationchange":"resize",d=(/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream,function(){var t=n.clientWidth;t&&(t>=750?(t=750,e.body.style.width="750px"):e.body.style.width=t+"px",n.style.fontSize=100*(t/750)+"px",n.dataset.width=t,n.dataset.percent=100*(t/750))});d(),e.documentElement.classList.add("iosx"+t.devicePixelRatio),e.addEventListener&&t.addEventListener(i,d,!1)}(document,window)
+</script>
+<!-- test demo start -->
+<!-- 刷新 -->
+<!-- <button type="button" name="button" onclick="window.location.reload()" style="z-index:55;font-size:.32rem;position:fixed;top:0;right:0;padding:.2rem;display:none">reload</button> -->
+<!-- log日志 -->
+<div class="log" style="position:fixed;left:0;bottom:0;display:none;color:#000;font-size: 12px;z-index:999999;word-break:break-all"></div>
+<!-- test demo end -->
+  <div id="app">
+  </div>
+  <input type="file" id="inputFile" accept="image/*" style="position:absolute;top:0;left:-9999px;" value="">
+  <img src="static/img/blank.jpg" id="bridgeImg" style="position:absolute;top:0;left:-999rem;width:100%;z-index:166;background-color:red" alt="">
+  <div id="qrcode" style="position:absolute;left:-99992px;top:0;z-index:55;"></div>
+</body>
+<script>
+
+</script>
+</html>
